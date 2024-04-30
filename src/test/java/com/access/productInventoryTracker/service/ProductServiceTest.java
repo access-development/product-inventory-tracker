@@ -11,6 +11,8 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 @SpringBootTest
 public class ProductServiceTest {
 
@@ -48,5 +50,5 @@ public class ProductServiceTest {
     }
 
     // Your tests here...
-    
+
 }

@@ -15,6 +15,67 @@ You are required to enhance the functionality of our Product Inventory Tracker b
   - **Usage of Java’s Optional:** Apply Java’s Optional to gracefully handle potential null values.
   - **Efficient use of functional interfaces and stream operations:** Utilize these features for effective data processing.
 
+### Setup Instructions
+
+**Project Requirements:**
+
+- **Java 21**
+- **Maven**
+
+For setting up your development environment, we recommend using **SDKMAN!**, an excellent tool for managing parallel versions of multiple Software Development Kits on most Unix-based systems.
+
+### Installing SDKMAN! and Required Software
+
+1. **Install SDKMAN!:**
+   First, open your terminal and install SDKMAN! by running:
+
+   ```bash
+   curl -s "https://get.sdkman.io" | bash
+   ```
+
+   After installation, start a new terminal session or enter:
+
+   ```bash
+   source "$HOME/.sdkman/bin/sdkman-init.sh"
+   ```
+
+   You can verify the installation with:
+
+   ```bash
+   sdk version
+   ```
+
+2. **Install Java 21 and Maven Using SDKMAN!:**
+   - **Java:**
+
+     ```bash
+     sdk install java 21.0.0-zulu
+     ```
+
+   - **Maven:**
+
+     ```bash
+     sdk install maven
+     ```
+
+Make sure to use Java 21 and Maven for building this project by checking the versions:
+
+```bash
+java -version
+mvn -version
+```
+
+### Setting Up the Project
+
+Once Java and Maven are installed, you can set up your project environment:
+
+1. **Clone the project repository** from GitHub (using the link provided earlier).
+1. Create a new branch for your work.
+1. Navigate to the project directory where the `pom.xml` file is located.
+1. Run `mvn clean install` to build the project and ensure all dependencies are correctly installed.
+
+Upon completion of these steps, your development environment will be ready for you to begin the technical assessment. If you encounter any issues with setting up SDKMAN!, Java, or Maven, feel free to reach out for assistance.
+
 ### Workflow Instructions
 
 To successfully complete your assessment for the Product Inventory Tracker, please follow the steps outlined below. These steps are crafted to evaluate your coding, testing, and problem-solving skills using Java and Spring Boot.
