@@ -4,16 +4,16 @@
 
 ### Overview
 
-You are required to enhance the functionality of our Product Inventory Tracker by adding features that allow users to search for products based on specific criteria. Your task involves implementing methods in the service layer (`ProductService`) to enable filtering of product entries by various product attributes.
+You are required to improve our Product Inventory Tracker by adding features that let users search for products using specific details. Your job is to add methods in the service layer (`ProductService`) to filter product entries based on different product attributes.
 
 ### Requirements
 
 **Coding Standards:**
 
-- Uphold clean code principles to ensure your code is both readable and maintainable, such as:
-  - **Proper naming conventions:** Choose clear and descriptive names for methods and parameters.
-  - **Usage of Java’s Optional:** Apply Java’s Optional to gracefully handle potential null values.
-  - **Efficient use of functional interfaces and stream operations:** Utilize these features for effective data processing.
+- Follow clean code rules to make your code easy to read and maintain:
+  - **Clear naming:** Use names for methods and parameters that explain their purpose.
+  - **Java’s Optional:** Use Java’s Optional to safely handle cases where values might be missing (null).
+  - **Streams and functional interfaces:** Use these Java features to process data efficiently.
 
 ### Setup Instructions
 
@@ -22,24 +22,24 @@ You are required to enhance the functionality of our Product Inventory Tracker b
 - **Java 21**
 - **Maven**
 
-For setting up your development environment, we recommend using **SDKMAN!**, an excellent tool for managing parallel versions of multiple Software Development Kits on most Unix-based systems.
+We recommend using **SDKMAN!** to set up your development environment. It helps manage different versions of tools like Java and Maven on Unix-based systems.
 
 ### Installing SDKMAN! and Required Software
 
 1. **Install SDKMAN!:**
-   First, open your terminal and install SDKMAN! by running:
+   Open your terminal and run:
 
    ```bash
    curl -s "https://get.sdkman.io" | bash
    ```
 
-   After installation, start a new terminal session or enter:
+   After it installs, start a new terminal or run:
 
    ```bash
    source "$HOME/.sdkman/bin/sdkman-init.sh"
    ```
 
-   You can verify the installation with:
+   Check if it works by running:
 
    ```bash
    sdk version
@@ -58,57 +58,61 @@ For setting up your development environment, we recommend using **SDKMAN!**, an 
      sdk install maven
      ```
 
-Make sure to use Java 21 and Maven for building this project by checking the versions:
+   Confirm the correct versions are installed:
 
-```bash
-java -version
-mvn -version
-```
+   ```bash
+   java -version
+   mvn -version
+   ```
 
 ### Setting Up the Project
 
-Once Java and Maven are installed, you can set up your project environment:
+After installing Java and Maven, prepare your project:
 
-1. **Clone the project repository** from GitHub (using the link provided earlier).
-1. Create a new branch for your work.
-1. Navigate to the project directory where the `pom.xml` file is located.
-1. Run `mvn clean install` to build the project and ensure all dependencies are correctly installed.
+1. **Clone the project repository** from GitHub (use the link we provided).
+2. Create a new branch for your work (example: `feature/your-username`).
+3. Go to the project folder where the `pom.xml` file is.
+4. Run `mvn clean install` to build the project and download all dependencies.
 
-Upon completion of these steps, your development environment will be ready for you to begin the technical assessment. If you encounter any issues with setting up SDKMAN!, Java, or Maven, feel free to reach out for assistance.
+Your environment is now ready. If you have problems with SDKMAN!, Java, or Maven, ask us for help.
 
 ### Workflow Instructions
 
-To successfully complete your assessment for the Product Inventory Tracker, please follow the steps outlined below. These steps are crafted to evaluate your coding, testing, and problem-solving skills using Java and Spring Boot.
+To complete this task, follow these steps. We will review your coding, testing, and problem-solving skills in Java and Spring Boot. **Important:** We expect you to submit your work as a Pull Request.
 
 1. **Review Use Cases:**
-   - Begin by examining the three provided use cases. Each describes a specific requirement for the `ProductService` class.
+   - Read the three use cases below. Each explains a requirement for the `ProductService` class.
 2. **Implement Service Methods:**
-   - Code the service methods as specified in `ProductService.java`, adhering to clean code principles and efficient data processing using Java Stream API.
+   - Write the methods in `ProductService.java`. Use clean code principles and Java Stream API for efficient data processing.
 3. **Write Unit Tests:**
-   - For each service method, compose a unit test in `ProductServiceTest.java`. Ensure each test robustly verifies the functionality of the respective service method, including edge cases.
+   - For each method, create a unit test in `ProductServiceTest.java`. Test normal cases and edge cases (like empty results).
 4. **Run Unit Tests:**
-   - Execute the unit tests to confirm they pass. Focus solely on your testing; running the entire application isn't necessary for this assessment. Make sure your tests are comprehensive and consider various scenarios, including edge cases.
+   - Run your tests to make sure they pass. You do not need to run the full application—just focus on your tests.
 5. **Commit Your Code:**
-   - After developing the service methods and confirming that all tests pass, commit your code and push it to your assigned branch for review.
+   - Save your changes with `git commit`. You can make as many commits as you need.
+6. **Push Your Branch:**
+   - Push your branch to the repository with `git push`.
+7. **Create a Pull Request:**
+   - Go to GitHub, find your branch, and create a Pull Request (PR) to the `main` branch. This is how we will review your work. **We will not review your code without a Pull Request.**
 
 ### Mock Data Setup
 
-A method creating mock `Product` data and configuring `findAll()` to return this data will be provided in the `ProductServiceTest.java` class. This setup allows you to focus primarily on crafting the business logic and testing.
+The `ProductServiceTest.java` class includes a method with mock `Product` data and a `findAll()` method that returns this data. Use this to focus on writing business logic and tests.
 
 ### Use Cases
 
 1. **Price Range Filter:**
-   - **Task:** Implement a method to return a list of `ProductDTO` objects that fall within a specified price range.
-   - **Testing:** Ensure your unit test verifies that only products within the price range are returned and handles edge cases like no products within the range.
-  
+   - **Task:** Write a method to return a list of `ProductDTO` objects with prices in a given range.
+   - **Testing:** Test that only products in the range are returned. Include a test for when no products match.
+
 2. **Category Filter:**
-   - **Task:** Write a service method to return a list of `ProductDTO` objects matching a specified category.
-   - **Testing:** Verify through testing that the method correctly filters products by category, and include a scenario where the specified category is absent in the data.
+   - **Task:** Write a method to return a list of `ProductDTO` objects for a specific category.
+   - **Testing:** Test that the method filters by category correctly. Include a test for a category with no products.
 
 3. **Availability Filter:**
-   - **Task:** Craft a method that returns a list of `ProductDTO` objects based on their availability status.
-   - **Testing:** Develop a unit test that ensures products are accurately filtered by their availability status and consider scenarios where products are both available and unavailable.
+   - **Task:** Write a method to return a list of `ProductDTO` objects based on availability (true or false).
+   - **Testing:** Test that products are filtered by availability. Include tests for both available and unavailable products.
 
 ### Summary
 
-This workflow and the associated tasks are designed to assess your technical skills in Java backend services development and effective unit testing. Please complete each part of the task as described while maintaining clean and readable code throughout your implementation.
+This task tests your skills in Java backend development and unit testing. Complete each step as described, keep your code clean and clear, and submit your work with a Pull Request. If you are unsure about any step, contact us for help.
