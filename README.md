@@ -82,14 +82,17 @@ To successfully complete your assessment for the Product Inventory Tracker, plea
 
 1. **Review Use Cases:**
    - Begin by examining the three provided use cases. Each describes a specific requirement for the `ProductService` class.
-2. **Implement Service Methods:**
+2. **Identify and Fix Existing Bug:**
+   - **Important:** There is a subtle bug in the existing codebase that will affect the filtering functionality. As part of this assessment, you must identify and fix this bug before implementing the filtering methods. The bug is related to data transformation and will cause inconsistent behavior in category filtering.
+   - Write a test that demonstrates the bug, then fix the issue.
+3. **Implement Service Methods:**
    - Code the service methods as specified in `ProductService.java`, adhering to clean code principles and efficient data processing using Java Stream API.
-3. **Write Unit Tests:**
+4. **Write Unit Tests:**
    - For each service method, compose a unit test in `ProductServiceTest.java`. Ensure each test robustly verifies the functionality of the respective service method, including edge cases.
-4. **Run Unit Tests:**
+5. **Run Unit Tests:**
    - Execute the unit tests to confirm they pass. Focus solely on your testing; running the entire application isn't necessary for this assessment. Make sure your tests are comprehensive and consider various scenarios, including edge cases.
-5. **Commit Your Code:**
-   - After developing the service methods and confirming that all tests pass, commit your code and push it to your assigned branch for review.
+6. **Commit Your Code:**
+   - After identifying and fixing the bug, developing the service methods, and confirming that all tests pass, commit your code and push it to your assigned branch for review.
 
 ### Mock Data Setup
 
@@ -111,4 +114,10 @@ A method creating mock `Product` data and configuring `findAll()` to return this
 
 ### Summary
 
-This workflow and the associated tasks are designed to assess your technical skills in Java backend services development and effective unit testing. Please complete each part of the task as described while maintaining clean and readable code throughout your implementation.
+This workflow and the associated tasks are designed to assess your technical skills in Java backend services development, debugging, and effective unit testing. The assessment includes:
+
+- **Bug identification and resolution** - Testing your ability to identify and fix existing issues
+- **Service implementation** - Building filtering functionality with clean, efficient code  
+- **Comprehensive testing** - Writing robust unit tests that cover various scenarios
+
+Please complete each part of the task as described while maintaining clean and readable code throughout your implementation.
