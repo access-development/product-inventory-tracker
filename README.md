@@ -80,19 +80,23 @@ Upon completion of these steps, your development environment will be ready for y
 
 To successfully complete your assessment for the Product Inventory Tracker, please follow the steps outlined below. These steps are crafted to evaluate your coding, testing, and problem-solving skills using Java and Spring Boot.
 
+1. **Create a new branch:**:
+   - Start by creating a new branch in your local repository for this assessment. This will help keep your changes organized and separate from the main codebase. You will create a pull request once you're ready to submit your work.
 1. **Review Use Cases:**
    - Begin by examining the three provided use cases. Each describes a specific requirement for the `ProductService` class.
-2. **Identify and Fix Existing Bug:**
+1. **Identify and Fix Existing Bug:**
    - **Important:** There is a subtle bug in the existing codebase that will affect the filtering functionality. As part of this assessment, you must identify and fix this bug before implementing the filtering methods. The bug is related to data transformation and will cause inconsistent behavior in category filtering.
    - Write a test that demonstrates the bug, then fix the issue.
-3. **Implement Service Methods:**
+1. **Implement Service Methods:**
    - Code the service methods as specified in `ProductService.java`, adhering to clean code principles and efficient data processing using Java Stream API.
-4. **Write Unit Tests:**
+1. **Write Unit Tests:**
    - For each service method, compose a unit test in `ProductServiceTest.java`. Ensure each test robustly verifies the functionality of the respective service method, including edge cases.
-5. **Run Unit Tests:**
+1. **Run Unit Tests:**
    - Execute the unit tests to confirm they pass. Focus solely on your testing; running the entire application isn't necessary for this assessment. Make sure your tests are comprehensive and consider various scenarios, including edge cases.
-6. **Commit Your Code:**
+1. **Commit Your Code:**
    - After identifying and fixing the bug, developing the service methods, and confirming that all tests pass, commit your code and push it to your assigned branch for review.
+1. **Create a Pull Request:**
+   - Once your code is pushed, create a pull request in the repository. In the pull request description, provide a brief overview of the changes made, including the bug fix and the implemented service methods.
 
 ### Mock Data Setup
 
