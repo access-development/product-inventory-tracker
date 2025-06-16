@@ -23,7 +23,7 @@ public class ProductService {
             product.getId(),
             product.getName(),
             product.getPrice(),
-            product.getCategory().toLowerCase(), // BUG: This will cause case-sensitive filtering issues
+            product.getCategory().toLowerCase(),
             product.isAvailable()
         );
     }
