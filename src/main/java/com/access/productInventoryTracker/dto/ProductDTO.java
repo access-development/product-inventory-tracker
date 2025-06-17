@@ -1,5 +1,6 @@
 package com.access.productInventoryTracker.dto;
 
+
 public class ProductDTO {
     private Long id;
     private String name;
