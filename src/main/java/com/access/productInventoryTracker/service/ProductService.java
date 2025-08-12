@@ -36,6 +36,8 @@ public class ProductService {
             .collect(Collectors.toList());
     }
 
+    // Your filtering methods here...
+
     // AI Generated
     public List<ProductDTO> getProductsByCategory(String category) {
         return productRepository.findAll().stream()
