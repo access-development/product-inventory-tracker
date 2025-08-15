@@ -116,6 +116,20 @@ A method creating mock `Product` data and configuring `findAll()` to return this
    - **Task:** Craft a method that returns a list of `ProductDTO` objects based on their availability status.
    - **Testing:** Develop a unit test that ensures products are accurately filtered by their availability status and consider scenarios where products are both available and unavailable.
 
+### Important Notes
+
+**AI-Generated Code:** Please note that portions of this codebase were generated using AI tools. This includes some of the boilerplate code, initial class structures, and basic implementations. As a candidate, you should review all code critically and not assume it follows best practices.
+
+**Feel Free to Improve:** You are encouraged and expected to fix, optimize, or refactor any code you encounter that could be improved. This includes but is not limited to:
+- Code style and formatting issues
+- Performance optimizations
+- Better error handling
+- More robust validation
+- Improved naming conventions
+- Enhanced code organization
+
+Don't limit yourself to just the specific requirements - demonstrating your ability to recognize and improve suboptimal code is part of the assessment.
+
 ### Summary
 
 This workflow and the associated tasks are designed to assess your technical skills in Java backend services development, debugging, and effective unit testing. The assessment includes:
@@ -123,5 +137,6 @@ This workflow and the associated tasks are designed to assess your technical ski
 - **Bug identification and resolution** - Testing your ability to identify and fix existing issues
 - **Service implementation** - Building filtering functionality with clean, efficient code  
 - **Comprehensive testing** - Writing robust unit tests that cover various scenarios
+- **Code quality improvement** - Recognizing and enhancing any suboptimal code you encounter
 
 Please complete each part of the task as described while maintaining clean and readable code throughout your implementation.
