@@ -4,6 +4,7 @@ import com.access.productInventoryTracker.dto.ProductDTO;
 import com.access.productInventoryTracker.model.Product;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import com.access.productInventoryTracker.repository.ProductRepository;
 import org.springframework.stereotype.Service;
@@ -37,5 +38,16 @@ public class ProductService {
 
     // Your filtering methods here...
 
+    // AI Generated
+    public List<ProductDTO> getProductsByCategory(String category) {
+        return productRepository.findAll().stream()
+            .flatMap(product -> {
+                if (!product.getCategory().equalsIgnoreCase(category)) {
+                    return Stream.of(convertToDTO(product));
+                }
+                return Stream.empty();
+            })
+            .collect(Collectors.toList());
+    }
 
 }
