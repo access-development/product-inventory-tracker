@@ -1,6 +1,30 @@
-# Product Inventory Tracker
+# Product Inventory Tracker - Java Challange
 
-## Task: Implement Filtering Methods in the Service Layer
+This challenge consists of **two parts**:
+
+## Pre-Start Instructions
+**Clone the project repository** from GitHub (using the green **Use this template** button in the upper right of the repo).
+
+## Part 1: AI Collaboration Challenge
+Write a detailed AI prompt for implementing a bulk operations feature (DO NOT code it - just write the prompt). This demonstrates modern development skills.
+
+**🚫 DO NOT IMPLEMENT** any code. **DO NOT RUN** any AI prompts. This is purely a prompt writing exercise.
+
+**Your Task:**
+Complete the `Prompt.md` file at the root of the project. The file is already created with structured sections for you to fill out:
+
+1. **AI Tool Selection** - Which tool you'd choose and why
+2. **Comprehensive Prompt** - Your complete prompt including codebase context and constraints  
+3. **Collaboration Approach** - How you'd iterate with the AI to implement the feature
+
+**⚠️ Important:** 
+- **Only fill out the Prompt.md file** - do not implement any code for the bulk operations feature
+- **Do not run your prompt** with any AI tool - this is a writing exercise only
+- This tests your ability to write effective AI prompts, not to implement features
+
+**💡 Tip:** Spend a few minutes exploring the codebase first to understand the architecture, then complete your prompt.
+
+## Part 2: Implement Filtering Methods in the Service Layer
 
 ### Overview
 
@@ -69,7 +93,7 @@ mvn -version
 
 Once Java and Maven are installed, you can set up your project environment:
 
-1. **Clone the project repository** from GitHub (using the link provided earlier).
+1. **Clone the project repository** from GitHub (the pre-start instructions, above).
 1. Create a new branch for your work.
 1. Navigate to the project directory where the `pom.xml` file is located.
 1. Run `mvn clean install` to build the project and ensure all dependencies are correctly installed.
